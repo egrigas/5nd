@@ -1,0 +1,71 @@
+.trans {
+    margin: 20px auto;
+    text-align: center;
+    width: 80px;
+    line-height: 80px;
+    background-color: #E7AB79;
+    border-radius: 12px;
+    border: solid #F6E3C5 4px;
+    transition: all 0.7s ease;
+}
+
+.trans:hover {
+    border: solid #774360 4px;
+    background: #B25068;
+    transform: rotate(360deg) scale(0.8) translateY(100px);
+}
+
+h2 {
+    padding-top: 50px;
+    text-align: center;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --animation-duration:1s;
+    --bounce-height:calc(205px - 100vh);
+    }
+    body{
+    background-image: linear-gradient(75deg,white,  lightgray 5%,white 15%, lightgray 55% , lightgray 90%,white);
+    background-size: 100%;
+    background-attachment: fixed;
+    min-height: 300px;
+    font-family: arial,sans-serif;
+    font-size: 16px;
+    overflow: hidden;
+    margin:0;
+    }
+
+h1{
+    line-height: 24px;
+    margin: 0;
+    font-weight: normal;
+}
+
+#suport {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align:center;
+}
+
+#rotateImg {
+    border-radius: 50%;
+    display:inline-block;
+    width: 200px;
+    height: 200px;
+}
+
+#rotateImg {
+    background-image: url("https://freesvg.org/img/soccer_ball2.png");
+    background-size: 100%;
+    animation-name: rotateImg;
+    animation-duration: calc(var(--animation-duration) * 5.3);
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotateImg {
+    100% {transform:rotate(360deg)}
+    }
